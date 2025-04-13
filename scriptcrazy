@@ -112,64 +112,6 @@ end
 local player = game.Players.LocalPlayer
 
 
-local keyHWIDPairs = {
-    ["atoCNjsElVZratFODOAXcNrUuxEQZsVW"] = "ADA0DE3C-8AFF-43B7-9D0E-E8300352DF65",
-    ["nboCNjsElVZraafODgfAfaNrUuxEQZsKW"] = "9F82393D-1579-490C-B794-F7DB17305656",
-    ["bLsOdnoPOJorjmsQoNaxUdjMQcZEvRBD"] = "553D86CF-0BBD-4EE5-AAA4-14AE0A2E3790",
-    ["omxrcomp1"] = "2E9C6AB4-EB3A-49C3-8EA8-39B7F2D5BD96",
-    ["YxLwKpRmDvNzQsTbVgHjJkFcXhBnMdP"] = "ED4484D6-0A4C-4FC3-8E65-1A2E4F02F8BC",
-    ["sWrGtHyUjIkOlPpAqSdFgHvBcXxZzNm"] = "1e96f4b1-40b4-46d1-94fa-f2174e28c74a",
-
-}
-
-local function getHWID()
-    return game:GetService("RbxAnalyticsService"):GetClientId()
-end
-
-local currentHWID = getHWID()
-local currentKey = getgenv().cswipe.StartUp.Key
-
-
-if not keyHWIDPairs[currentKey] then
-    player:Kick("not your key")
-end
-
-
-if keyHWIDPairs[currentKey] ~= currentHWID then
-    player:Kick("not your key idiot")
-end
-]]
-
-
-local player = game.Players.LocalPlayer
-
-
-local keyHWIDPairs = {
-    ["atoCNjsElVZratFODOAXcNrUuxEQZsVW"] = "ADA0DE3C-8AFF-43B7-9D0E-E8300352DF65",
-    ["nboCNjsElVZraafODgfAfaNrUuxEQZsKW"] = "9F82393D-1579-490C-B794-F7DB17305656",
-    ["bLsOdnoPOJorjmsQoNaxUdjMQcZEvRBD"] = "553D86CF-0BBD-4EE5-AAA4-14AE0A2E3790",
-    ["omxrcomp1"] = "2E9C6AB4-EB3A-49C3-8EA8-39B7F2D5BD96",
-    ["YxLwKpRmDvNzQsTbVgHjJkFcXhBnMdP"] = "ED4484D6-0A4C-4FC3-8E65-1A2E4F02F8BC",
-    ["sWrGtHyUjIkOlPpAqSdFgHvBcXxZzNm"] = "1e96f4b1-40b4-46d1-94fa-f2174e28c74a",
-
-}
-
-local function getHWID()
-    return game:GetService("RbxAnalyticsService"):GetClientId()
-end
-
-local currentHWID = getHWID()
-local currentKey = getgenv().cswipe.StartUp.Key
-
-
-if not keyHWIDPairs[currentKey] then
-    player:Kick("not your key")
-end
-
-
-if keyHWIDPairs[currentKey] ~= currentHWID then
-    player:Kick("not your key idiot")
-end
 
 
 if getgenv().cswipe.FPS.FPSUnlocker == true then

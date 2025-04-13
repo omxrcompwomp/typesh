@@ -105,15 +105,6 @@ if not LPH_OBFUSCATED then
     getfenv().LPH_NO_VIRTUALIZE = function(f) return f end;
 end
 
-
-
-
---[[
-local player = game.Players.LocalPlayer
-
-
-
-
 if getgenv().cswipe.FPS.FPSUnlocker == true then
     if setfpscap then
         setfpscap(getgenv().cswipe.FPS.Limit)
